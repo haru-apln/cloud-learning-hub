@@ -1,0 +1,14 @@
+# OS-specific files (Mac/Windows junk)
+.DS_Store
+Thumbs.db
+
+# VS Code specific settings
+.vscode/
+
+# Local environment/secrets (In case you add API keys later)
+.env
+*.log
+
+# Backups or temporary files
+*.tmp
+*.bak
