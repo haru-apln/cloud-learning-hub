@@ -1,0 +1,127 @@
+/* Light Mode Variables (Default) */
+:root {
+  --bg: #ffffff;
+  --text: #333333;
+  --card-bg: #f9f9f9;
+  --border: #dddddd;
+  --accent: #1f73b7;
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+  --bg: #1a1a1a;
+  --text: #e0e0e0;
+  --card-bg: #2d2d2d;
+  --border: #444444;
+  --accent: #4fa3e0;
+}
+
+body {
+  width: 280px;
+  font-family: "Segoe UI", sans-serif;
+  padding: 15px;
+  background-color: var(--bg);
+  color: var(--text);
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+#theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 2px 6px;
+  color: var(--text);
+}
+
+.course-card {
+  margin-bottom: 18px;
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 12px;
+}
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.platform-label {
+  display: block;
+  font-size: 10px;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.course-link {
+  font-size: 13px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
+}
+.course-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.delete-btn {
+  color: #dc3545;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: bold;
+}
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 10px;
+  height: 12px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.fill {
+  height: 100%;
+  width: 0%;
+  transition: width 0.8s ease-in-out;
+  background: #4caf50;
+}
+.percent-text {
+  font-size: 11px;
+  font-weight: bold;
+  color: #777;
+}
+
+.add-form {
+  background: var(--card-bg);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+  border: 1px solid var(--border);
+}
+input {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--text);
+}
+#add-btn {
+  width: 100%;
+  background: #1f73b7;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
